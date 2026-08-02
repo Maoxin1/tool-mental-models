@@ -1,5 +1,7 @@
 # Git 版本控制：面向 AI 时代的心智模型
 
+> 上一篇：[命令行工具基础](../command-line-tools/README.md) · [返回知识库首页](../../README.md) · 下一篇：[Codex CLI](../codex-cli/README.md)
+
 > 这不是 Git 操作手册。
 >
 > 本文默认 AI 可以完成绝大多数具体操作；人的核心职责是定义意图、边界、风险与验收标准。
