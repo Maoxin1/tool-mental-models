@@ -33,7 +33,7 @@
 
 模型决定“它可能想得多好”；范围与权限决定“它最多能影响什么”；上下文决定“它基于什么世界行动”；证据决定“你凭什么相信任务完成”。
 
-当前官方 CLI 参考把模型、工作目录、沙箱、审批、搜索、配置覆盖与不同执行形态暴露为可配置入口；但这些名称只是上述控制变量在某个版本中的实现。[Codex CLI 概览](https://developers.openai.com/codex/cli/features) · [CLI 参考](https://developers.openai.com/codex/cli/reference)
+当前官方 CLI 参考把模型、工作目录、沙箱、审批、搜索、配置覆盖与不同执行形态暴露为可配置入口；但这些名称只是上述控制变量在某个版本中的实现。[Codex CLI 概览](https://learn.chatgpt.com/docs/codex/cli) · [CLI 参考](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
 
 ---
 
@@ -130,7 +130,7 @@ Codex CLI 因此不是“更聪明的文本框”，也不只是“会写代码�
 
 #### 回答不等于结果
 
-自然语言总结是声明；Diff、测试、系统状态和独立审查才是证据。官方资料也将 CLI 定义为能在本地仓库中检查、编辑并运行工具的工作界面，而不仅是回答问题。[Codex CLI](https://developers.openai.com/codex/cli/features)
+自然语言总结是声明；Diff、测试、系统状态和独立审查才是证据。官方资料也将 CLI 定义为能在本地仓库中检查、编辑并运行工具的工作界面，而不仅是回答问题。[Codex CLI](https://learn.chatgpt.com/docs/codex/cli)
 
 ---
 
@@ -264,7 +264,7 @@ Codex 工作流把中间循环交给代理：
 - **策略系统**：沙箱、审批、规则、Hooks、组织强制配置；
 - **云执行系统**：隔离容器、可复现环境、后台和并行任务。
 
-MCP 的生态位置是“把模型接到工具和上下文”，不是另一个模型；Skills 的位置是“封装可重复工作方法”，不是额外权限；Cloud 的位置是“改变执行地点、隔离和并行方式”，不是改变目标责任。[MCP](https://learn.chatgpt.com/docs/extend/mcp) · [Skills](https://developers.openai.com/codex/skills) · [Codex Cloud](https://developers.openai.com/codex/cloud)
+MCP 的生态位置是“把模型接到工具和上下文”，不是另一个模型；Skills 的位置是“封装可重复工作方法”，不是额外权限；Cloud 的位置是“改变执行地点、隔离和并行方式”，不是改变目标责任。[MCP](https://learn.chatgpt.com/docs/extend/mcp) · [Skills](https://learn.chatgpt.com/docs/build-skills) · [Codex Cloud](https://learn.chatgpt.com/docs/cloud)
 
 ### 2.7 创造哪些价值（Value）
 
@@ -369,7 +369,7 @@ flowchart TD
 
 #### 沙箱 × 审批：两个正交轴
 
-官方文档明确将安全控制拆成两层：沙箱限定技术能力，审批策略决定何时暂停询问。[Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)
+官方文档明确将安全控制拆成两层：沙箱限定技术能力，审批策略决定何时暂停询问。[Agent approvals & security](https://learn.chatgpt.com/docs/agent-approvals-security)
 
 | | 审批少 | 审批多 |
 |---|---|---|
@@ -789,7 +789,7 @@ Codex 的下游不是“回答”，而是：
 | CI/CD | 受控集成与发布 | 把候选修改送入稳定、可审计的交付系统 |
 | Observability | 日志、事件、成本与失败信号 | 让自动任务能诊断、审计和改进 |
 
-官方配置模型区分一次性覆盖、项目配置、Profile、用户配置、系统默认与组织要求；这种分层的意义是让“临时选择”“团队默认”和“不可绕过底线”不要混成一团。[Config basics](https://developers.openai.com/codex/config-basic) · [Configuration reference](https://developers.openai.com/codex/config-reference)
+官方配置模型区分一次性覆盖、项目配置、Profile、用户配置、系统默认与组织要求；这种分层的意义是让“临时选择”“团队默认”和“不可绕过底线”不要混成一团。[Config basics](https://learn.chatgpt.com/docs/config-file/config-basic) · [Configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference)
 
 ---
 
@@ -1002,15 +1002,15 @@ flowchart LR
 
 本文刻意不复制完整语法；需要核对易变实现时，以以下官方入口为准：
 
-- [Codex CLI 概览](https://developers.openai.com/codex/cli/features)：CLI 的产品定位、本地工作与其他执行表面；
-- [CLI 参考](https://developers.openai.com/codex/cli/reference)：当前子命令与旗标；
-- [Config basics](https://developers.openai.com/codex/config-basic)：配置层与优先级；
-- [Configuration reference](https://developers.openai.com/codex/config-reference)：模型、推理、沙箱、审批、网络、MCP 等当前字段；
-- [Agent approvals & security](https://developers.openai.com/codex/agent-approvals-security)：沙箱、审批与网络的安全模型；
+- [Codex CLI 概览](https://learn.chatgpt.com/docs/codex/cli)：CLI 的产品定位、本地工作与其他执行表面；
+- [CLI 参考](https://learn.chatgpt.com/docs/developer-commands?surface=cli)：当前子命令与旗标；
+- [Config basics](https://learn.chatgpt.com/docs/config-file/config-basic)：配置层与优先级；
+- [Configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference)：模型、推理、沙箱、审批、网络、MCP 等当前字段；
+- [Agent approvals & security](https://learn.chatgpt.com/docs/agent-approvals-security)：沙箱、审批与网络的安全模型；
 - [Non-interactive mode](https://learn.chatgpt.com/docs/non-interactive-mode)：自动化、结构化输出与无人值守边界；
-- [Custom instructions with AGENTS.md](https://developers.openai.com/codex/guides/agents-md)：长期仓库指导与继承关系；
+- [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)：长期仓库指导与继承关系；
 - [Model Context Protocol](https://learn.chatgpt.com/docs/extend/mcp)：外部工具与上下文连接；
-- [Build skills](https://developers.openai.com/codex/skills)：可复用工作流及其生态位置；
-- [Codex cloud](https://developers.openai.com/codex/cloud)：隔离、后台与并行执行。
+- [Build skills](https://learn.chatgpt.com/docs/build-skills)：可复用工作流及其生态位置；
+- [Codex cloud](https://learn.chatgpt.com/docs/cloud)：隔离、后台与并行执行。
 
 维护时应先问：“世界模型变了吗？”只有答案为“是”，才修改正文；如果只是名称、默认值或语法变化，更新资料入口或版本说明即可。
