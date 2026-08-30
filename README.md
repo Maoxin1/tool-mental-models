@@ -69,7 +69,6 @@ flowchart LR
 ```text
 .
 ├── README.md
-├── index.html
 └── docs/
     ├── command-line-tools/
     │   └── README.md
