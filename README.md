@@ -88,4 +88,4 @@ flowchart LR
 
 ## 贡献与许可
 
-提交修订前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。除另有说明外，本仓库的原创文档采用 [Creative Commons Attribution 4.0 International](LICENSE) 许可。
+提交修订前请阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。除另有说明外，本仓库的原创文档 © 2026 Maoxin1，并采用 [Creative Commons Attribution 4.0 International](LICENSE) 许可。
